@@ -4,7 +4,8 @@
 var n = 8;
 
 var app = function app() {
-    this.targetExpires;
+    this.blockNavigation = false;
+    this.targetExpires = 0;
     this.maxTarget = 16;
     this.target = 0;
     this.points = 0;
@@ -85,6 +86,8 @@ var app = function app() {
     };
 
     this.onMouseDown = function (event) {
+        if (this.blockNavigation) { return }
+
         var button = event.target;
 
         this.pressDown = true;
@@ -93,6 +96,8 @@ var app = function app() {
     };
 
     this.onMouseOver = function (event) {
+        if (this.blockNavigation) { return }
+
         var number = '',
             button = event.target;
 
@@ -112,6 +117,8 @@ var app = function app() {
     };
 
     this.onMouseUP = function () {
+        if (this.blockNavigation) { return }
+
         var number = '';
 
         for (var i in this.collected) {
@@ -142,6 +149,7 @@ var app = function app() {
         this.element('current', result);
 
         if (result === this.target && this.pressDown === false){
+            this.blockNavigation = true;
             this.points += result;
             this.resetTime();
             this.element('points', this.points);
@@ -303,6 +311,7 @@ var app = function app() {
         loader.parentNode.replaceChild(newLoader, loader);
         this.target = Math.floor(Math.random() * this.maxTarget);
         this.element('target', this.target);
+        this.blockNavigation = false;
 
         for (var i in buttons) {
             buttons[i].innerText = buttons[i].value;
