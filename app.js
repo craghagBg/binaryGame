@@ -5,7 +5,7 @@ var n = 8;
 
 var app = function app() {
     this.targetExpires;
-    this.maxTarget = 8;
+    this.maxTarget = 16;
     this.target = 0;
     this.points = 0;
     this.count = 0;
@@ -30,7 +30,7 @@ var app = function app() {
         this.target = Math.floor(Math.random() * maxTarget);
         this.element('target', this.target);
         this.element('points', this.points);
-        this.element('result', 0);
+        this.element('current', 0);
 
         for (var x = 0; x < n; x++) {
             rowElement = document.createElement('TR');
@@ -139,7 +139,7 @@ var app = function app() {
         number = parseInt(number, 2);
         var result = !isNaN(number) && number <= 1024 ? number : 0;
 
-        this.element('result', result);
+        this.element('current', result);
 
         if (result === this.target && this.pressDown === false){
             this.points += result;

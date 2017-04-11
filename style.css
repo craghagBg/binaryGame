@@ -121,7 +121,7 @@ td {
     position: relative;
 }
 
-#result{
+#current{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,7 +161,7 @@ td {
     height: 70px;
 }
 
-#result-lable {
+#current-label {
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e799), color-stop(1, #ffffff));
     background:-moz-linear-gradient(top, #e9e799 5%, #ffffff 100%);
     background:-webkit-linear-gradient(top, #e9e799 5%, #ffffff 100%);
@@ -182,7 +182,7 @@ td {
     -o-transform: skew(160deg);
 }
 
-#points-lable {
+#points-label {
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e799), color-stop(1, #ffffff));
     background:-moz-linear-gradient(top, #e9e799 5%, #ffffff 100%);
     background:-webkit-linear-gradient(top, #e9e799 5%, #ffffff 100%);
