@@ -91,6 +91,8 @@ body {
 }
 
 #infoContainer {
+    font-family:Pacifico, cursive;
+    color: #222222;
     width: 278px;
     height: 100px;
     background-color: #42f4c5;
@@ -124,7 +126,7 @@ td {
     align-items: center;
     justify-content: center;
     -webkit-justify-content: center;
-    margin: 15px  0px 2px 8px;
+    margin: 20px  0px 0px 10px;
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e799), color-stop(1, #ffffff));
     background:-moz-linear-gradient(top, #e9e799 5%, #ffffff 100%);
     background:-webkit-linear-gradient(top, #e9e799 5%, #ffffff 100%);
@@ -135,8 +137,8 @@ td {
     background-color:#e9e799;
     border-radius: 50%;
     font-size: 35px;
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 }
 
 #points {
@@ -144,7 +146,7 @@ td {
     align-items: center;
     justify-content: center;
     -webkit-justify-content: center;
-    margin: 15px  8px 0px 2px;
+    margin: 20px  10px 0px 0px;
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e799), color-stop(1, #ffffff));
     background:-moz-linear-gradient(top, #e9e799 5%, #ffffff 100%);
     background:-webkit-linear-gradient(top, #e9e799 5%, #ffffff 100%);
@@ -155,8 +157,8 @@ td {
     background-color:#e9e799;
     border-radius: 50%;
     font-size: 35px;
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 }
 
 #result-lable {
@@ -168,14 +170,13 @@ td {
     background:linear-gradient(to bottom, #e9e799 5%, #ffffff 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#42f4c5', endColorstr='#4286f4',GradientType=0);
     background-color:#e9e799;
-    font-size: 17px;
+    font-size: 14px;
     width: 60px;
     height: 18px;
     position: absolute;
     left: 16px;
     top: 2px;
     border-radius: 10px;
-    font-weight: bold;
     -webkit-transform: skew(160deg);
     -moz-transform: skew(160deg);
     -o-transform: skew(160deg);
@@ -190,14 +191,13 @@ td {
     background:linear-gradient(to bottom, #e9e799 5%, #ffffff 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#42f4c5', endColorstr='#4286f4',GradientType=0);
     background-color:#e9e799;
-    font-size: 17px;
+    font-size: 14px;
     width: 60px;
     height: 18px;
     position: absolute;
     left: 204px;
     top: 2px;
     border-radius: 10px;
-    font-weight: bold;
     -webkit-transform: skew(160deg);
     -moz-transform: skew(160deg);
     -o-transform: skew(160deg);
@@ -213,7 +213,7 @@ td {
     position: absolute;
     margin: 0 auto;
     z-index: 10;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .myButton {
@@ -357,7 +357,7 @@ td {
 }
 
 .vanishOut {
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
     animation-fill-mode: both;
     animation-name: vanishOut;
 }
@@ -378,7 +378,7 @@ td {
 }
 
 .vanishIn {
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
     animation-fill-mode: both;
     animation-name: vanishIn;
 }
